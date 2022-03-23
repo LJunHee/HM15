@@ -9,6 +9,8 @@
   * hm15_day.html : 나의 일상
 
 ## 사용한 html 기술
+* iframe 
 * 하이퍼링크
 * target 속성
 * 표에 그림 넣기
+* audio 
