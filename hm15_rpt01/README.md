@@ -6,7 +6,7 @@
   * hm15_info.html : 나의 소개
   * hm15_best3.html : 나의 Best 3 영화
   * hm15_trip.html : 나의 여행가고 싶은 나라 
-  * hm15_day.html : 나의 일상
+  * hm15_day.html : 나의 하루
 
 ## 사용한 html 기술
 * iframe 
