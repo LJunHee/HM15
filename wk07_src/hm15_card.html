@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm11 : CSS3 advanced</title>
+		<style>
+			#song {
+				position: fixed;
+				top: 470px;
+				left: 10px;
+			}
+            #hm15 {
+				position: fixed;
+				top: 470px;
+				left: 420px;
+				padding: 5px;
+				background: rgb(0, 153, 255);
+				color: black;
+			}
+			#gold {
+				position: absolute;
+				top: 70px;
+				left: 0px;
+			}
+			#tree {
+				position: fixed;
+				top: 115px;
+				left: 100px;
+			}
+			div {
+				display: inline-block;
+				position: fixed;
+				border: 5px solid rgb(0, 255, 170);
+			}
+			div > p {
+				display: inline-block; /* div의 자식 p */
+				position: fixed;
+				height: 20px;
+				width: 15px;
+				background: lightgray;
+			}
+			@keyframes textColorAnimation {
+			0% { color : blue; font-size: 50%;}
+			30% { color : green; font-size: 100%; }
+			100% { color : red; font-size: 50%; }
+			}
+			span { border-radius: ;
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>Merry Christmas!</h3>
+		<hr>
+		<img id="gold" src="media/border.png"
+		width="500" height="400"
+		alt="카드 테두리">
+		<img id="tree" src="media/christmastree.png"
+		width="300" height="300"
+		alt="크리스마스 트리">
+
+		<div id="song">
+			<audio src="media/xmas.mp3" controls autoplay loop>
+				브라우저가 audio 태그를 지원하지 않습니다.
+			</audio>
+        </div>
+        <div id="hm15">
+				<span>hm15, 이준희 </span>
+		</div>
+		<div>
+			<p style="left: 180px; top: 185px;">
+				<img src="media/ball1.jpg" >
+			</p>
+			<p style="left: 320px; top: 200px;">
+				<img src="media/ball2.jpg" >
+			</p>
+			<p style="left: 205px; top: 80px;">
+				<img src="media/top.jpg">
+			</p>
+			<p style="left:280px; top:245px">
+				<img src="media/socks.jpg">
+			</p>
+			<p style="left:200px; top:280px">
+				<img src="media/ballmany.jpg" >
+			</p>
+			<p style="left: 230px; top: 170px;">
+				<img src="media/star.jpg">
+			</p>
+
+			<p style="left: 105px; top: 320px;">
+				<img src="media/ball3.jpg">			</p>
+
+		</div>
+	</body>
+
+</html>
+
