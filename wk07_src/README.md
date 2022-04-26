@@ -3,3 +3,14 @@
               노래를 삽입, span,textcoloranimation기능을 이용하여 이름표의 색깔과 크기를 계속해서 변환되도록 애니메이션 효과를 넣었고 border radius기능을 이용하여 
               이름표 끝부분을 둥글게 변경 position기능을 이용하여 트리의 장식을 img태그로 삽입하였고 글씨또한 장식의 위치에 맞게 옮겼고, rgb와 background-rgb를 사용하여 글씨를
               더 이쁘게 만듬.              
+## 사용된 html5 기능
+- position
+- keyframe
+- border-radius
+- textcoloranimation
+- span
+- div
+- img src
+- audio src
+- background-color
+- etc...
