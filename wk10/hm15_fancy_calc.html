@@ -6,6 +6,10 @@
     <meta charset="utf-8" />
     <title>hmnn : Javascript</title>
     <style>
+        body{
+        background-color: #aaffdf;
+        color : rgb(0, 0, 0);
+        }
         input {
             padding: 8px;
             display: inline;
@@ -15,7 +19,7 @@
         }
         input#display {
             color: black;
-            background-color: #99ffcc;
+            background-color: #5bf5a8;
             font-size: 20px;
             text-align: right;
             border-radius: 50cm;
@@ -80,6 +84,16 @@
         var expression = expression_num.toString(16);
         document.getElementById("display").value = parseInt(expression).toString(16);
       }
+      function octal() {
+        var expression_num = document.getElementById("display").value;
+        var expression = expression_num.toString(8);
+        document.getElementById("display").value = parseInt(expression).toString(8);
+      }
+      function binary() {
+        var expression_num = document.getElementById("display").value;
+        var expression = expression_num.toString(2);
+        document.getElementById("display").value = parseInt(expression).toString(2);
+      }
     </script>
   </head>
 
@@ -109,27 +123,30 @@
         <br />
         <input id="num"
           type="button"
-          value="            0            "
+          value="              0              "
           onclick="add('0')"
         />
         <input id="num" type="button" value="    .    " onclick="add('.')" />
         <input id="op" type="button" value="    +    " onclick="add('+')" />
         <br />
-      
+        <input id="op" type="button" value="    16진수    " onclick="hexadecimal()"/>
+        <input id="op" type="button" value="    8진수    " onclick="octal()"/>
+        <input id="op" type="button" value="    2진수    " onclick="binary()"/>
+        <input id="op" type="button" value="    %   " onclick="add('%')" />
+           <br>  
         <input id="clear"
           type="button"
-          value="        Clear         "
+          value="              Clear               "
           onclick="clearDisplay()"
         />
         <input id="enter"
           type="button"
-          value="        Enter         "
+          value="              Enter               "
           name="enter"
           onclick="compute()"
         />
         <br>
-        <input id="clear" type="button" value="                      16진수                      " onclick="hexadecimal()"/>
-      </form>
+    </form>
       <h4>COMSI, HM15</h4>
     </div>
   </body>
