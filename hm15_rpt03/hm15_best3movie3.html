@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hm15 : iframe - target control</title>
+        
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				width: 100%;
+				height: 100%;
+				background-color: #aaffdf;
+			}
+			header{
+				width: 100%;
+				height: 10%;
+			}
+			section{
+				float: left;
+				width: 50%;
+				height: 80%;
+                margin-left: 900px;
+			}
+			section article{
+				width: 100%;
+				height: 50%;
+			}
+			ul{
+				/* list-style:none; */
+				margin: auto;
+				font-size: 20px;
+			}
+			ul li{
+				margin-top: 10px;
+			}
+		</style>
+		<script>
+					function change() {
+			var spanArray = document.getElementsByTagName("span");
+			for(var i=0; i<spanArray.length; i++) {
+				var span = spanArray[i];
+				span.style.color = "purple";
+				span.style.fontSize = "35px";
+				}
+					}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<h1 id="start" style="text-align: center;">어벤져스: 엔드게임</h1>
+
+			<hr color = "black" width="80%">
+		</header>
+		<section>
+			
+			<article1>
+                <iframe src='https://tv.naver.com/embed/5747279?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='740' HEIGHT='416' allow='autoplay' allowfullscreen></iframe>
+				<button onclick="change()">눌러보세요</button>
+            </article1>
+			<article2>
+				<ul>
+					<li style="font-weight: bold;"><span>주연 : 로버트 다우니 주니어,크리스 에반스</span></li>
+					<li style="font-weight: bold;"><span>개봉일 : 2019.04.24</span></li>
+					<li style="font-weight: bold;"><span>장르 : 액션, SF</span></li>
+
+			<article2>
+		</section>
+
+	</body>
+
+</html>

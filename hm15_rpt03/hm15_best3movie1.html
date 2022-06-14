@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hm15 : iframe - target control</title>
+        
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				width: 100%;
+				height: 100%;
+				background-color: #aaffdf;
+			}
+			header{
+				width: 100%;
+				height: 10%;
+			}
+			section{
+				float: left;
+				width: 50%;
+				height: 80%;
+                margin-left: 900px;
+			}
+			section article{
+				width: 100%;
+				height: 50%;
+			}
+			ul{
+				/* list-style:none; */
+				margin: auto;
+				font-size: 20px;
+			}
+			ul li{
+				margin-top: 10px;
+			}
+
+		
+
+		</style>
+		<script>
+		function change() {
+			var spanArray = document.getElementsByTagName("span");
+			for(var i=0; i<spanArray.length; i++) {
+				var span = spanArray[i];
+				span.style.color = "red";
+				span.style.fontSize = "35px";
+				}
+					}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<h1 id="start" style="text-align: center;">범죄도시 2</h1> 
+
+
+			<hr color = "black" width="80%">
+		</header>
+		<section>
+			
+			<article1>
+                <iframe src='https://tv.naver.com/embed/26355148?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='740' HEIGHT='416' allow='autoplay' allowfullscreen></iframe></iframe>
+				<button onclick="change()">눌러보세요</button>
+			</article1>
+			<article2>
+				<ul>
+					<li style="font-weight: bold;"><span>주연 : 마동석, 손석구</span></li>
+					<li style="font-weight: bold;"><span>개봉일 : 2022.05.18</span></li>
+					<li style="font-weight: bold;"><span>장르 : 범죄, 액션</span></li>
+
+			<article2>
+		</section>
+
+	</body>
+
+</html>

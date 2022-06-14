@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm15 : CSS3 advanced</title>
+		<style>
+			#song {
+				position: fixed;
+				top: 690px;
+				left: 10px;
+			}
+            #hm15 {
+				position: fixed;
+				top: 690px;
+				left: 550px;
+				padding: 5px;
+				background: rgb(39, 252, 92);
+				color: black;
+				border-radius: 4ch;
+			}
+			#border {
+				position: absolute;
+				top: 90px;
+				left: 0px;
+			}
+			#tree {
+				position: fixed;
+				top: 115px;
+				left: 100px;
+			}
+			div {
+				display: inline-block;
+				position: fixed;
+				border: 5px solid #aaffdf;
+			}
+			div > p {
+				display: inline-block; /* div의 자식 p */
+				position: fixed;
+				height: 20px;
+				width: 15px;
+				font-size: 15px;
+				background: #aaffdf;
+			}
+			@keyframes textColorAnimation {
+			50% { color : blue; font-size: 50%;}
+			100% { color : green; font-size: 100%; }
+			50% { color : rgb(255, 0, 0); font-size: 50%; }
+			}
+			span { border-radius: ;
+				animation-name: textColorAnimation;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+			}
+			body{
+				background-color: #aaffdf;
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>Merry Christmas!</h3>
+		<hr>
+		<img id="border" src="media/border.jpg"
+		width="700" height="600"
+		alt="카드 테두리">
+		<img id="tree" src="media/christmastree.png"
+		width="500" height="500"
+		alt="크리스마스 트리">
+
+		<div id="song">
+			<audio src="media/xmas.mp3" controls autoplay loop>
+				브라우저가 audio 태그를 지원하지 않습니다.
+			</audio>
+        </div>
+        <div id="hm15">
+				<span>hm15, 이준희 </span>
+		</div>
+		<div>
+			<p style="left: 200px; top: 290px;">
+				<img src="media/ball1.jpg" >
+			</p>
+			<p style="left: 300px; top: 95px;">
+				<img src="media/star.png" >
+			</p>
+			<p style="left: 295px; top: 450px;">
+				<img src="media/ribon.png">
+			</p>
+			<p style="left:490px; top:270px" >
+				<img src="media/socks.jpg">
+			</p>
+			<p style="left:200px; top:480px">
+				<img src="media/ballmany.jpg" >
+			</p>
+			<p style="left: 475px; top: 490px;">
+				<img src="media/ball2.png">
+			</p>
+			<p style="left: 400px; top: 320px;">
+				<img src="media/ball3.jpg">	
+			</p>
+			<p style="left: 268px; top: 250px; color: rgb(255, 0, 0);">
+				M
+			</p>
+			<p style="left: 363px; top: 215px; color: yellow; background-color: green;">
+				E
+			</p>
+			<p style="left: 234px; top: 382px; color: yellow; background-color: green;">
+				R
+			</p>
+			<p style="left:302px; top:325px; color: rgb(25, 0, 255); background-color: lightgreen;">
+				R
+			</p>
+			<p style="left:405px; top:275px; color: rgb(255, 0, 0); background-color: yellow;">
+				Y
+			</p>
+			<p style="left: 142px; top: 498px; color: rgb(0, 0, 0); background-color: white;">
+				X
+			</p>
+			<p style="left: 245px; top: 448px; color: rgb(255, 255, 255); background-color: purple;">
+				-
+			</p>
+			<p style="left: 355px; top: 388px; color: rgb(255, 255, 255); background-color: red;">
+				M
+			</p>
+			<p style="left:433px; top:425px; color: rgb(0, 0, 0); background-color: aliceblue;">
+				A
+			</p>
+			<p style="left:492px; top:385px; color: rgb(0, 0, 0); background-color: yellow;">
+				S
+			</p>
+
+		</div>
+	</body>
+
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hm15 : iframe - image profile</title>
+        
+		<style>
+			ul{
+				list-style: none;
+				text-align: center;
+				margin-left: 22%;
+				font-weight: 700;
+				width: 50%;
+				background : #aaffdf;
+				padding : 10px 10px 10px 50px;
+				/* list-style-position: inside; */ 
+
+			}
+			
+			ul li{ /* ul의 자손 li */
+				font-weight: 700;
+				font-size: 30pt;
+				color: #525050;
+				background: #aaffdf;
+				margin-bottom: 5px;
+			}
+			.multiEffect {
+				color: #525050;
+				text-shadow: 2px 2px 2px white, 0 0 25px white, 0 0 5px white;
+			}
+			h1{
+				text-align: center;
+			}
+			span:hover{
+				font-size: 40pt;
+				color:#7d2cff;
+			}
+			h1{
+				text-align: center;
+			}
+		</style>
+		<script>
+			function change(obj, size, color) {
+			obj.style.color = color;
+			obj.style.fontSize = size;
+		}
+		var width = 1;
+
+      function down(obj) {
+        obj.style.fontStyle = "italic";
+      }
+
+      function up(obj) {
+        obj.style.fontStyle = "normal";
+      }
+
+      function over(obj) {
+        obj.style.borderColor = "#08BD92";
+
+      }
+
+      function out(obj) {
+        obj.style.borderColor = "#08BD92";
+      }
+
+      function wheel(e,obj) {
+        if (e.wheelDelta < 0) {
+          width--;
+          if (width < 0) width = 0;
+
+        } 
+        else width++;
+        obj.style.borderStyle = "ridge";
+        obj.style.borderWidth = width + "px";
+      }
+		</script>
+	</head>
+
+	<body style="background-color:#aaffdf;">
+        <h2 style="text-align: center;">My Info</h2>
+
+        <hr>
+        <ul>
+			<strong>
+				<li>이름 : <span class="HM15" onclick="change(this, '50px', '#black')">이준희</span>
+
+				<li>학부 : <span class="HM15" onclick="change(this, '50px', '#black')">드론 IoT 시뮬레이션 학부</span>
+
+				<li>학번 : <span class="HM15" onclick="change(this, '50px', '#black')">20192587</span>
+
+				<li>ID : <span class="HM15" onclick="change(this, '50px', '#black')">LJunHee</span>
+
+				<li>전화번호 : <span class="HM15" onclick="change(this, '50px', '#black')">010-5459-xxxx</span>
+
+				<li>사는 곳 : <span class="HM15" onclick="change(this, '50px', '#black')">울산</span>
+
+				</strong>
+		</ul>
+	</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>나의 하루 일과</title>
+    <style>
+          * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #aaffdf;
+      height: 100%;
+    }   
+    div.box {
+      background: white;
+      width: 700px;
+      height: 570px;
+      margin-left: -350px;
+      position: relative;
+      top: 30px;
+      left: 50%;
+      /* transform: translate(-50%,-50%); */
+      border-radius: 0 0 15px 15px;
+      box-shadow: 20px 20px rgba(0, 0, 0, .5);
+      border: 2px solid black;
+    }
+        table{
+            border-collapse: collapse;
+            margin-left: auto; margin-right: auto;
+        }
+        td,th{
+            text-align: center;
+        }
+        th{
+            height: 40px;
+            width: 200px;
+        }
+        td{
+            height: 40px;
+            width: 200px;
+        }
+        thead{
+            background: darkgray;
+            color: yellow;
+            text-align: center;
+        }
+        tfoot{
+            background: darkgray;
+            color: black;
+        }
+        td, tfoot th{
+            border-bottom: 1px solid gray;
+        }
+        tbody tr:nth-child(even){
+            background: aliceblue;
+        }
+        tbody tr:hover{
+            background: plum;
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+        .imgtext{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h3>나의 하루 일과</h3>
+<hr>
+<table border="1">
+    <thead>
+        <tr><th>시간</th><th>하는 일</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>08:30 ~ 09:00</td><td>기상 및 아침식사</td></tr>
+        <tr><td>09:00 ~ 09:30</td><td>샤워 및 등교 준비</td></tr>
+        <tr><td>09:30 ~ 13:00</td><td>학교 도착 및 오전 수업</td></tr>
+        <tr><td>13:00 ~ 14:00 </td><td>점심 식사 </td></tr>
+        <tr><td>14:00 ~ 18:00</td><td>오후 수업</td></tr>
+        <tr><td>18:00 ~ 19:00</td><td>집으로 귀가</td></tr>
+        <tr><td>19:00 ~ 21:30</td><td>저녁 식사 및 과제</td></tr>
+        <tr><td>21:30 ~ 22:00</td><td>샤워</td></tr>
+        <tr><td>22:00 ~ 00:30</td><td>취미 활동 </td></tr>
+        <tr><td>00:30 ~ 08:30</td><td>취침</td></tr>
+    </tbody>
+
+</table>
+<hr>
+<table>
+    <thead>
+        <tr><th><나의 시간표></th></tr>
+    </thead>
+</table>
+<hr>
+<div class="imgtext">
+    <img src="media/plan.png" width="1200" height="650"alt="시간표">
+</div>
+</body>
+</html>
